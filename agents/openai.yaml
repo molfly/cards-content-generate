@@ -1,0 +1,6 @@
+interface:
+  display_name: "OpenClaw Card"
+  short_description: "Generate OpenClaw cards with a fixed LJG-style template."
+  default_prompt: "Use $openclaw-card to generate an OpenClaw-style card from source text and return the MEDIA path."
+policy:
+  allow_implicit_invocation: true

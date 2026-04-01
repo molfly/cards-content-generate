@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{TITLE}}</title>
+    <style>
+      :root {
+        --bg: #f5f7fa;
+        --surface: #ffffff;
+        --text: #1f2933;
+        --muted: #52606d;
+        --accent: #3d5a80;
+        --rule: rgba(61, 90, 128, 0.24);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: "Georgia", "Times New Roman", serif;
+      }
+
+      .frame {
+        width: 1080px;
+        margin: 0 auto;
+        padding: 48px;
+      }
+
+      .card {
+        background: var(--surface);
+        border: 1px solid rgba(31, 41, 51, 0.08);
+        box-shadow: 0 24px 80px rgba(31, 41, 51, 0.08);
+        padding: 56px 64px 44px;
+      }
+
+      .eyebrow {
+        margin: 0 0 18px;
+        color: var(--accent);
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0 0 24px;
+        font-size: 54px;
+        line-height: 1.02;
+        letter-spacing: -0.04em;
+      }
+
+      p {
+        margin: 0;
+        font-size: 24px;
+        line-height: 1.7;
+      }
+
+      p + p {
+        margin-top: 14px;
+      }
+
+      .dropcap::first-letter {
+        float: left;
+        margin: 10px 14px 0 0;
+        color: var(--accent);
+        font-size: 92px;
+        line-height: 0.78;
+        font-weight: 700;
+      }
+
+      .items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px 32px;
+        margin-top: 34px;
+        padding-top: 28px;
+        border-top: 1px solid var(--rule);
+      }
+
+      .item {
+        display: grid;
+        grid-template-columns: 52px 1fr;
+        gap: 16px;
+        align-items: start;
+      }
+
+      .label {
+        color: var(--accent);
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        line-height: 1.6;
+      }
+
+      .highlight {
+        margin-top: 34px;
+        padding: 6px 0 6px 24px;
+        border-left: 4px solid var(--accent);
+        color: var(--muted);
+        font-size: 27px;
+        line-height: 1.65;
+      }
+
+      .footer {
+        margin-top: 30px;
+        padding-top: 18px;
+        border-top: 1px solid var(--rule);
+        color: var(--muted);
+        font-size: 15px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="frame">
+      <article class="card">
+        <p class="eyebrow">Technology / Engineering</p>
+        <h1>{{TITLE}}</h1>
+        <p class="dropcap">{{DROPCAP}}</p>
+        <section class="items">
+          {{ITEMS}}
+        </section>
+        <p class="highlight">{{HIGHLIGHT}}</p>
+        <p class="footer">{{FOOTER}}</p>
+      </article>
+    </main>
+  </body>
+</html>
