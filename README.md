@@ -45,6 +45,12 @@ npm install
 node skills/openclaw-card/scripts/capture.js /absolute/path/to/card.html /absolute/path/to/card.png
 ```
 
+## Example Card
+
+Example output card:
+
+![Example OpenClaw card](./simple_card.jpg)
+
 ## License
 
 Not specified yet.
